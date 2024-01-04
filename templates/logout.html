@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Logout Icon</title>
+<link rel="stylesheet" href="{{url_for('static',filename='logout.css')}}">
+</head>
+<body>
+<div class="logout">
+  <h2>Do you want to log out?</h2>
+  <form method="post">
+  <button type="submit">Log out</button>
+  </form>
+  <a href="{{url_for('main')}}">Cancel</a>
+</div>
+</body>
+</html>

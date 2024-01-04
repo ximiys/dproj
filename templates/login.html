@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Page</title>
+<link rel="stylesheet" href="{{url_for('static',filename='login.css')}}">
+</head>
+<body>
+<div class="login-container">
+  <div class="login-header">
+    <img src="{{ url_for('static', filename='logo.png') }}" alt="Librarum Logo" class="logo">
+    <h2><font color="white">Welcome back! Log in</font></h2>
+  </div>
+  <form class="login-form" method="post">
+    <label for="email">Email</label>
+    <input type="email" id="email" placeholder="Enter email..." name="email">
+    <label for="password">Password</label>
+    <input type="password" id="password" placeholder="Enter password..." name="password">
+    <button type="submit">LOG IN</button>
+  </form>
+  <div class="signup-link">
+    <a href="{{url_for('signup')}}">DON'T HAVE AN ACCOUNT YET?</a>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Page</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='registrationStyles.css') }}">
+</head>
+<body>
+<div class="login-container">
+    <img src="{{ url_for('static', filename='logo.png') }}" class="logo">
+    <div class="button-container">
+        <a class="btn-signup" href="{{url_for('signup')}}">SIGN UP</a>
+        <a class="btn-login" href="{{url_for('login')}}">LOG IN</a>
+    </div>
+    <footer>
+        <a href="#" class="terms">TERMS & PRIVACY POLICY</a>
+    </footer>
+</div>
+</body>
+</html>

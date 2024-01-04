@@ -1,0 +1,296 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0efeb; /* Default light background */
+    color: #000; /* Default text color for light mode */
+}
+
+.sidebar {
+    background-color: #1E365D;
+    color: #fff;
+    padding: 20px;
+    width: 250px;
+    height: 100vh;
+    float: left;
+}
+
+.sidebar h1 {
+    margin-bottom: 20px;
+}
+
+.sidebar nav ul {
+    list-style: none;
+}
+
+.sidebar nav ul li {
+    padding: 10px 0;
+}
+
+.sidebar nav ul li a {
+    color: #EDB350;
+    text-decoration: none;
+}
+
+.sidebar nav ul li.active {
+    background-color: #EDB350;
+    color: #1E365D;
+}
+
+.sidebar nav ul li.active a {
+    color: #1E365D;
+}
+
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+.main-content header h2 {
+    color: #1E365D;
+}
+
+.settings {
+    margin-top: 20px;
+}
+
+.settings form {
+    background-color: #f0efeb;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 400px;
+}
+
+.settings form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.settings form input[type="checkbox"],
+.settings form input[type="file"],
+.settings form input[type="text"] {
+    margin-bottom: 20px;
+}
+
+.settings form input[type="text"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.settings form input[type="submit"] {
+    background-color: #1E365D;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.settings form input[type="submit"]:hover {
+    background-color: #EDB350;
+}
+
+footer {
+    background-color: #1E365D;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: calc(100% - 250px);
+    left: 250px;
+}
+
+.logo {
+    width: 150px; /* Adjust as necessary */
+    margin-bottom: 10px;
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.dark-mode .sidebar {
+    background-color: #262626;
+}
+
+.dark-mode .main-content {
+    background-color: #1e1e1e;
+}
+
+.dark-mode .settings form {
+    background-color: #333;
+}
+
+.dark-mode footer {
+    background-color: #262626;
+}
+
+.settings form input[type="submit"] {
+    background-color: #1E365D; /* Button background color */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Padding inside the button */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Cursor to pointer to indicate it's clickable */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    font-size: 16px; /* Font size */
+    font-weight: bold; /* Font weight */
+    letter-spacing: 0.5px; /* Spacing between letters */
+    display: inline-block; /* Allows for margin and proper alignment */
+    margin: 5px 0; /* Some margin at the top and bottom */
+    width: auto; /* Auto width based on content and padding */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.settings form input[type="submit"]:hover,
+.settings form input[type="submit"]:focus {
+    background-color: #EDB350; /* Change background color on hover/focus */
+    color: #1E365D; /* Change text color so it contrasts well with the new background */
+    outline: none; /* Remove the outline that browsers might add on focus */
+}
+
+/* Enhancing the file input button */
+.settings form input[type="file"] {
+    color: white; /* Making the file input text white */
+    background-color: #1E365D;
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.settings form input[type="file"]:hover,
+.settings form input[type="file"]:focus {
+    background-color: #EDB350;
+    color: #1E365D;
+    outline: none;
+}
+
+/* Styling for checkbox */
+.settings form input[type="checkbox"] {
+    accent-color: #1E365D; /* Change the color of the checkbox */
+}
+
+.main-content {
+    font-family: Arial, sans-serif;
+    max-width: 800px; /* Limit the width for better readability */
+    margin: auto; /* Center the content */
+    padding: 20px;
+    background-color: #fff; /* Background color for the content area */
+    border-radius: 8px; /* Slightly rounded corners for the content area */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.main-content header h2 {
+    color: #1E365D;
+    margin-bottom: 1rem; /* Space below the header */
+    padding-bottom: 0.5rem; /* Padding to give space under the text */
+    border-bottom: 2px solid #eee; /* A light line under the header to separate it from content */
+    text-align: center; /* Center the heading */
+}
+
+.settings {
+    padding: 20px;
+}
+
+.settings form {
+    background-color: #f9f9f9; /* Light background for the form */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners for the form */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Subtle shadow for depth */
+}
+
+.settings form label {
+    display: block; /* Each label on its own line */
+    margin-bottom: 0.5rem; /* Space below each label */
+    font-weight: bold; /* Make the text a little heavier */
+    color: #333; /* Darker color for the label for better contrast */
+}
+
+.settings form input[type="text"],
+.settings form input[type="file"] {
+    width: 100%; /* Full width inputs */
+    padding: 10px; /* Padding inside the inputs */
+    margin-bottom: 1rem; /* Space below the inputs */
+    border: 1px solid #ddd; /* A subtle border around the inputs */
+    border-radius: 4px; /* Rounded corners on the inputs */
+    box-sizing: border-box; /* Border-box to include padding and border in the width */
+}
+
+.settings form input[type="checkbox"] {
+    margin-right: 10px; /* Space to the right of the checkbox */
+}
+
+.settings form input[type="submit"] {
+    background-color: #1E365D;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    display: block; /* Make the button a block to fill the width */
+    width: 100%;
+    margin-top: 1rem; /* Space above the button */
+}
+
+.settings form input[type="submit"]:hover {
+    background-color: #EDB350;
+}
+
+/* Styling for file input button to match the submit button */
+.settings form input[type="file"] {
+    color: white;
+    background-color: #1E365D;
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+    line-height: 1; /* Adjust line height to ensure the text is vertically centered */
+}
+
+.settings form input[type="file"]::-webkit-file-upload-button {
+    visibility: hidden;
+}
+
+.settings form input[type="file"]::before {
+    content: 'Choose File';
+    display: inline-block;
+    background-color: #1E365D;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    outline: none;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+
+.settings form input[type="file"]:hover::before {
+    background-color: #EDB350;
+}
+
+.settings form input[type="file"]:active::before {
+    background-color: #1E365D;
+}

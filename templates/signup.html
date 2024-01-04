@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign Up Page</title>
+<link rel="stylesheet" href="{{url_for('static',filename='regstyles.css')}}">
+</head>
+<body>
+<div class="signup-container">
+    <div class="header">
+        <img src="{{ url_for('static', filename='logo.png') }}" class="logo">
+        <h2>Sign Up</h2>
+    </div>
+    <form class="signup-form" method="post">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter email..." name="email" required>
+        
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter password..." name="password" required>
+        
+        <label for="username">Name</label>
+        <input type="text" id="username" placeholder="Enter Your name..." name="username" required>
+        
+        <button type="submit" class="btn-signup">SIGN UP</button>
+    </form>
+    <div class="login-link">
+        <a href="{{url_for('login')}}">ALREADY HAVE AN ACCOUNT?</a>
+    </div>
+</div>
+<script>
+    window.onload = function(){
+        const urlParams = new URLSearchParams(window.location.search)
+        if (urlParams.get('dberr') === 'true'){
+            alert('an error occured')
+        }else if (urlParams.get('emailerr') === 'true'){
+            alert('invalid email')
+        }
+    }
+</script>
+</body>
+</html>

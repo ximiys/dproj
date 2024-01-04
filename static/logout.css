@@ -1,0 +1,79 @@
+body{
+  background-color: #192c4b;
+}
+
+.logout {
+    width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #1E365D; 
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+    font-family: Arial, sans-serif;
+  }
+  
+  .logout button {
+    background-color: #EDB350; 
+    color: white;
+    border: none;
+    margin-top: 10px;
+    padding: 5px 15px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .logout button:hover {
+    background-color: #EDB350; 
+  }
+
+  .logout .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: #aaa;
+    border: none;
+    background: none;
+    font-size: 18px;
+  }
+
+  .logout {
+    background-color: #1E365D;
+    color: white;
+    padding: 20px;
+    width: 300px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+  }
+  
+  
+  .logout button {
+    background-color: #EDB350;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    outline: none;
+  }
+
+  .logout a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .logout button:hover {
+    background-color: darken(#EDB350, 10%);
+  }
+  .logout h2 {
+    margin-bottom: 20px;
+  }
